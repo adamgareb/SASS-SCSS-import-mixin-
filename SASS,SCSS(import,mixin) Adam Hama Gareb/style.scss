@@ -1,0 +1,49 @@
+$color: green;
+$buttonPadding: 2em;
+@import "bodyStyle";
+@import "fontStyle";
+
+@mixin typography {
+    font-size: 20px;
+}
+
+@mixin fixTable {
+    color: blue;
+    background-color: black;
+    border: 1px solid;
+}
+
+@mixin cssFormatting {
+    background-color: aqua;
+    color: purple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+// 1
+h1{
+    color: $color;
+}
+
+table tr th{
+    @include fixTable;
+}
+
+button{
+    border: 2px solid;
+    padding: $buttonPadding;
+    transition: transform 0.5s ease-in 0s;
+    &:hover{
+        transform: translateY(10px);
+        color: blue;
+        font-size: 10px;
+    }
+}
+
+.typography{
+    @include typography()
+}
+
+.cssFormat{
+    @include cssFormatting()
+}

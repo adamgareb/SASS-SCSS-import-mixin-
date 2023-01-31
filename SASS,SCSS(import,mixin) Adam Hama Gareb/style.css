@@ -1,0 +1,39 @@
+body {
+  background-color: pink;
+}
+
+h1 {
+  font-size: x-large;
+}
+
+h1 {
+  color: green;
+}
+
+table tr th {
+  color: blue;
+  background-color: black;
+  border: 1px solid;
+}
+
+button {
+  border: 2px solid;
+  padding: 2em;
+  transition: transform 0.5s ease-in 0s;
+}
+button:hover {
+  transform: translateY(10px);
+  color: blue;
+  font-size: 10px;
+}
+
+.typography {
+  font-size: 20px;
+}
+
+.cssFormat {
+  background-color: aqua;
+  color: purple;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
